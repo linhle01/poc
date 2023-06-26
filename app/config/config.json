@@ -1,0 +1,83 @@
+{
+  "siteId": "beahost",
+  "name": "Beahost",
+  "domains": [
+    "beahost.guest.your.rentals",
+    "beahost.com"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "it",
+    "fr",
+    "de"
+  ],
+  "pages": [
+    {
+      "url": "/",
+      "title": "Home page"
+    }
+  ],
+  "logo": {
+    "url": "https://beahostrentals.net/wp-content/uploads/sites/79/2021/10/cropped-imageonline-co-transparentimage-1.png"
+  },
+  "themes": {
+    "colors": {
+      "bg-primary": "#FFFFFF",
+      "bg-secondary": "#FFFFFF",
+      "bg-header": "#FFFFFF",
+      "bg-footer": "#90b578",
+      "primary": "#90b50a",
+      "secondary": "#90b50a",
+      "text-primary": "#000000"
+    }
+  },
+  "menu": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Destinations",
+      "children": [
+        {
+          "name": "Italy",
+          "url": "/child-1"
+        },
+        {
+          "name": "Spain",
+          "url": "/child-2"
+        },
+        {
+          "name": "Croatia",
+          "url": "/child-3"
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "children": [
+        {
+          "name": "Italy",
+          "url": "/child-1"
+        },
+        {
+          "name": "Spain",
+          "url": "/child-2"
+        },
+        {
+          "name": "Croatia",
+          "url": "/child-3"
+        }
+      ]
+    },
+    {
+      "name": "About us",
+      "url": "/about-us"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    }
+  ]
+}

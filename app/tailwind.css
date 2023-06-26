@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    @apply bg-bg-header px-4 lg:px-6 py-2.5 fixed top-0 w-full
+}

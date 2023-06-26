@@ -6,6 +6,7 @@ module.exports = {
   serverBuildPath: 'server/index.js',
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
+  serverModuleFormat: 'cjs',
   future: {
     v2_errorBoundary: true,
     v2_headers: true,
@@ -13,4 +14,5 @@ module.exports = {
     v2_normalizeFormMethod: true,
     v2_routeConvention: true,
   },
+  tailwind: true,
 };

@@ -1,10 +1,22 @@
 import { cssBundleHref } from '@remix-run/css-bundle';
 import type { LinksFunction } from '@remix-run/node';
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import stylesheet from '~/tailwind.css';
+import { useEffect } from 'react';
+import { applyTheme } from '~/themes/utils';
+import { DEFAULT_THEME } from '~/themes';
 
-export const links: LinksFunction = () => [...(cssBundleHref ? [{ rel: 'stylesheet', href: cssBundleHref }] : [])];
+export const links: LinksFunction = () => [
+  ...(cssBundleHref
+    ? [{ rel: 'stylesheet', href: cssBundleHref }]
+    : [{ rel: 'stylesheet', href: stylesheet }]),
+];
 
 export default function App() {
+  useEffect(() => {
+    applyTheme(DEFAULT_THEME);
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -13,7 +25,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="h-screen overflow-auto">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
